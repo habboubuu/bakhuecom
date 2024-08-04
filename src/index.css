@@ -1,0 +1,30 @@
+/* Google Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@400;500;600;700&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /*font-family: "Roboto", sans-serif;*/
+    font-family: "Jost", sans-serif;
+}
+body{
+    background: #fff;
+}
+:root{
+    
+    /**
+    * colors
+    */
+
+    --middle-blue-green: #80c2bd;
+    --sonic-silver: #707070;
+    --eerie-black: #171717;
+    --ocean-green: #64c491;
+    --candy-pink: #de636b;
+    --cultured: #f5f5f5;
+    --white: #ffffff;
+    --black: #000000;
+}

@@ -1,0 +1,152 @@
+.hero-About{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),url(./../../Assets/form-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 100%;
+}
+.hero-about-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.hero-about-items h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+/*==================
+    About Intro
+====================*/
+.about-intro{
+    width: 700px;
+    text-align: center;
+    margin: 3rem auto;
+}
+.about-intro h1{
+    font-size: 2.5rem;
+}
+
+@media screen and (max-width:725px){
+    .about-intro h1{
+        font-size: 1.5rem;
+    }
+    .about-intro{
+        width: 400px;
+        margin: 3rem auto;
+    }
+}
+
+@media screen and (max-width:419px){
+    .about-intro h1{
+        font-size: 1.1rem;
+    }
+    .about-intro{
+        width: 300px;
+        margin: 2rem auto;
+    }
+}
+@media screen and (max-width:319px){
+    .about-intro h1{
+        font-size: .8rem;
+    }
+    .about-intro{
+        width: 250px;
+        margin: 2rem auto;
+    }
+}
+
+/*==================
+    About Content
+====================*/
+.about{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10rem;
+    margin-bottom: 4rem;
+}
+
+.about-img img{
+    width: 240px;
+    height: 360px;
+    object-fit: cover;
+}
+.about-img{
+    position: relative;
+}
+.about-img::before{
+    content: "";
+    position: absolute;
+    background-color: #2C4755;
+    width: 100px;
+    height: 440px;
+    top: -40px;
+    left: -30px;
+    z-index: -1;
+}
+.about-img::after{
+    content: "";
+    position: absolute;
+    top: -40px;
+    width: 100px;
+    height: 300px;
+    border-left: 80px solid var(--middle-blue-green);
+    border-bottom: 80px solid var(--middle-blue-green);
+    right: -130px;
+    z-index: -1;
+}
+
+.about-content{
+    width: 50%;
+}
+.about-content p{
+    margin-bottom: 2.5rem;
+    margin-top: 2.5rem;
+    line-height: 2;
+}
+.about-content hr{
+    width: 50%;
+    background-color: var(--middle-blue-green);
+    height: 2px; /* يمكنك تحديد ارتفاع الـ hr إذا كنت ترغب */
+    border: none; /* للتأكد من عدم وجود حدود */
+}
+
+
+@media screen and (max-width:817px){
+    
+    .about{
+        gap: 2rem;
+    }
+    .about-content{
+        width: 100%;
+        text-align: center;
+        padding: 0 1rem;
+    }
+    .about-content hr{
+        margin: 0 auto;
+    }
+    .about-content p{
+        margin-bottom: 1rem;
+        margin-top: 1rem;
+        line-height: 2;
+    }
+}
+
+@media screen and (max-width:550px){
+    .about-img::before{
+        display: none;
+    }
+    .about-img::after{
+        display: none;
+    }
+    .about-img img{
+        width: 230px;
+        height: 320px;
+        object-fit: cover;
+    }
+}

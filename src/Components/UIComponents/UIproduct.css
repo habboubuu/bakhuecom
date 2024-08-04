@@ -1,0 +1,92 @@
+.ProductItems{
+    border: 1px solid #bbbbbb;
+    width: 250px;
+    max-height: 350x;
+    height: 100%;
+    padding: 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+}
+.ProductItems h3{
+    color: gray;
+    font-size: .8rem;
+    font-weight: 500;
+    margin-bottom: .8rem;
+}
+
+.img-product{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid #dddddd;
+    position: relative;
+    padding: .5rem;
+}
+.img-product img{
+    width: 115px;
+    height: 130px;
+    object-fit: cover;
+}
+.discount-product{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.discount-product p{
+    text-align: center;
+    background-color: #FCF767;
+    width: 2.5rem;
+    padding: .1rem;
+}
+
+.product-static{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: .5rem;
+}
+.star-uiproduct{
+    color: var(--eerie-black);
+    font-size: .8rem;
+}
+.Price-Product h2{
+    color: var(--eerie-black);
+}
+.Price-Product p{
+    text-decoration: line-through;
+    color: #969696;
+    font-size: 1rem;
+}
+.Price-Product{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.product-cart{
+    padding: .5rem;
+    border: 1px solid #acacac;
+    border-radius: 6px;
+    background-color: #fff;
+    transition: .2s;
+    color: var(--eerie-black);
+
+}
+.UiBag-icon{
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+.product-cart:hover{
+    background-color: #313131;
+    color: #fff;
+}
+
+/*=======================*/
+.titleProductSection{
+    text-align: center;
+    margin-bottom: 2rem;
+}
+@media screen and (max-width:440px){
+    .titleProductSection{
+        font-size: 1.5rem;
+    }
+}

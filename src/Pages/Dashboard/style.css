@@ -1,0 +1,42 @@
+.users{
+    margin: 2rem 2rem;
+}
+.title-users{
+    margin-bottom: 1rem;
+}
+
+table, th, td{
+    border: 1px solid rgb(209, 209, 209);
+    border-collapse: collapse;
+    text-align: start;
+
+}
+
+table{
+    width: 100%;
+    table-layout: fixed;
+}
+
+th{
+    background-color: #fff;
+}
+tr:nth-child(even){
+    background-color: #fff;
+}
+tr{
+    height: 30px;
+}
+
+tr:hover{
+    background-color: #ebebeb;
+}
+
+th, td{
+    padding: 10px;
+    white-space: nowrap; /* text gha yb9a fstar wahd */
+    overflow: hidden; /* 2khfa2 motawa za2id */
+    text-overflow: ellipsis; /* mo7tawa za2id ydir 3lih ... */
+}
+.action-icon{
+    font-size: 1.2rem;
+}

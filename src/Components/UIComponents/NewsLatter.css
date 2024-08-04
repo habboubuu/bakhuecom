@@ -1,0 +1,108 @@
+.NewsLatter{
+    margin: 0 auto;
+}
+
+
+.NewsLatter-card{
+    background-image: url(../../Assets/newsletter-bg.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: #F5F5F5;
+    padding: 80px 15px; /* kantal3u background mzn */
+    text-align: center;
+    width: 80%;
+    height: 350px;
+    margin: 0 auto;
+}
+.NewsLatter-card h1{
+    margin-bottom: 1.5rem;
+}
+.NewsLatter-card p{
+    margin-bottom: 1rem;
+    color: gray;
+    line-height: 1.4;
+    font-size: 1rem;
+}
+.NewsLatter-card form{
+    margin-top: 2.5rem;
+}
+.newsletter-input{
+    display: inline;
+    background-color: #fff;
+    padding: .8rem 1rem;
+    border-radius: 8px;
+    position: relative;
+    border: none;
+}
+.newsletter-input:focus-within{
+    border: 2px solid var(--middle-blue-green);
+}
+
+.newsletter-input input{
+    outline: none;
+    border: none;
+    margin-left: .5rem;
+    width: 60%;
+}
+
+.btn-NewsLatter{
+    outline: none;
+    border: none;
+    padding: .9rem 1rem;
+    background-color: #222;
+    color: #fff;
+    cursor: pointer;
+    transition: .3s;
+    position: absolute;
+    top: 0;
+    right: 0;
+    border-radius: 0 8px 8px 0;
+    font-weight: 500;
+}
+.btn-NewsLatter:hover{
+    background-color: #e7e7e7;
+    color: #222;
+}
+.btn-NewsLatter span{
+    margin-right: .4rem;
+}
+
+@media screen and (max-width:510px){
+    .NewsLatter-card h1{
+        font-size: 1.4rem;
+    }
+    .NewsLatter-card p{
+        font-size: .8rem;
+    }
+}
+@media screen and (max-width:438px){
+    .NewsLatter-card{
+        width: 90%;
+        height: 400px;
+        margin: 0 auto;
+        padding: 50px 15px; /* kantal3u background mzn */
+    }
+    .newsletter-input{
+        display: inline-block;
+        background-color: #fff;
+        padding: .5rem 0rem;
+        position: relative;
+        height: 2.5rem;
+        width: 100%;
+    }
+    .newsletter-input input{
+        width: 50%;
+    }
+
+    .btn-NewsLatter{
+        padding: .6rem 1rem;
+        position: relative;
+        top: 2rem;
+        border-radius: 6px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin:  auto;
+    }
+}

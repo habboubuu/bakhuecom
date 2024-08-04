@@ -1,0 +1,95 @@
+.hero{
+    width: 100%;
+}
+
+/*===================
+    FIRST BAR
+====================*/
+.hero-bar{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3rem;
+    padding: .5rem;
+    text-align: center;
+    background-color: #fcf767;
+}
+.hero-bar h3{
+    font-size: 3rem;
+}
+.uptoff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.uptoff p{
+    font-size: .6rem;
+}
+.uptoff h1{
+    font-size: 1.8rem;
+}
+
+
+@media screen and (max-width:970px){
+    .hero-bar{
+        gap: 2rem;
+    }
+    .hero-bar h3{
+        font-size: 2rem;
+    }
+    .uptoff p{
+        font-size: .6rem;
+    }
+    .uptoff h1{
+        font-size: 1rem;
+    }
+}
+
+@media screen and (max-width:635px){
+    .hero-bar{
+        gap: 1.5rem;
+    }
+    .hero-bar h3{
+        font-size: 1.4rem;
+    }
+    .uptoff p{
+        font-size: .5rem;
+    }
+    .uptoff h1{
+        font-size: .7rem;
+    }
+}
+
+@media screen and (max-width:452px){
+    .uptoff p{
+        display: none;
+    }
+    .hero-bar{
+        gap: 1rem;
+    }
+    .hero-bar h3{
+        font-size: .8rem;
+    }
+    .uptoff h1{
+        font-size: .8rem;
+    }
+}
+
+/*======================
+    BACKGROUND BANNER
+========================*/
+.hero-banner{
+    background-image: url(./../../Assets/banner-img.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    width: 100%;
+    height: 350px;
+}
+@media screen and (max-width:775px){
+    .hero-banner{
+        background-position: right;
+    }
+}
+
+

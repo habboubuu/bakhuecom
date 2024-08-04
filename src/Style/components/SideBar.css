@@ -1,0 +1,68 @@
+.sidebar{
+    height: 200vh;
+    background: #2B3445;
+    width: 16rem;
+    /*width: fit-content;*/
+    /*position: sticky; /* position fixed mymknx dirliha d-flex */
+    top: 0;
+    /*left: -100%;*/
+    text-align: center;
+    z-index: 1;
+}
+.logo-title{
+    padding: 1rem 1.3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+.logo-title img{
+    width: 43px;
+}
+.logo-title .bars-icons{
+    color: #fff;
+    font-size: 1.5rem;
+    cursor: pointer;
+}
+/*======================*/
+.nav-links{
+    /*border: 1px solid red;*/
+    margin: 0 1rem;
+}
+.sidebar-links{
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    gap: 15px;
+    text-decoration: none;
+    /*margin-top: 3rem;*/
+    padding: .8rem 1rem;
+    border-radius: 4px;
+    margin-bottom: .5rem;
+    transition: .2s;
+    
+}
+.sidebar-links:hover{
+    background: #323A4B;
+}
+.active{
+    background: #304475;
+}
+/*bach f hover mydir ta taghyiir*/
+.active:hover{
+    background: #304475;
+}
+
+.sidebar-links p {
+    color: #f0f0f0;
+    font-size: 18px;
+}
+.icon-sidbar-links{
+    color: #f0f0f0;
+    font-size: 18px;
+}
+
+
+/*background: #323A4B;*/

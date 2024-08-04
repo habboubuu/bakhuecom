@@ -1,0 +1,27 @@
+.service-itmx {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .itmxser {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+  
+  .itmxser img {
+    display: block;
+    margin: 0 auto 10px auto; /* لضبط المحاذاة وإضافة مسافة أسفل الصورة */
+  }
+  
+  .source-services h4, .source-services p {
+    margin: 0;
+  }
+  
+.source-services p{
+    margin-top: 10px;
+    font-size: .9rem;
+    color: var(--sonic-silver);
+}

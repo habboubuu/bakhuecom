@@ -1,0 +1,52 @@
+.Edituser{
+    margin: 2rem 2rem;
+}
+form{
+    width: 100%;
+    height: 70vh;
+}
+.form-category, .form-categoryfile{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-category label, .form-categoryfile label{
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 1.01rem;
+    font-weight: 400;
+}
+.form-category input, .form-categoryfile input{
+    outline: none;
+    border: 2px solid #d3d3d3;
+    padding: .4rem .8rem;
+    border-radius: 6px;
+}
+
+.form-categoryfile input{
+    outline: none;
+    border: 2px solid #d3d3d3;
+    border-radius: 6px;
+    padding: .4rem .8rem;
+    cursor: pointer;
+}
+.form-category input:focus{
+    border: 2px solid rgb(163, 192, 255);
+}
+
+.category-btn{
+    border: none;
+    outline: none;
+    color: #fff;
+    background: #0044ff;
+    padding: .6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: .9rem;
+    transition: .3s;
+}
+
+.category-btn:hover{
+    background: #4272f5;
+}

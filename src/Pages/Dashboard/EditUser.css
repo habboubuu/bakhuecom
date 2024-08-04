@@ -1,0 +1,51 @@
+.Edituser{
+    margin: 2rem 2rem;
+}
+form{
+    width: 100%;
+    height: 70vh;
+}
+.form-edit{
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.form-edit label{
+    display: block;
+    margin-bottom: .5rem;
+    font-size: 1.01rem;
+    font-weight: 400;
+}
+.form-edit input{
+    outline: none;
+    border: 2px solid #d3d3d3;
+    padding: .4rem .8rem;
+    border-radius: 6px;
+}
+.form-edit input:focus{
+    border: 2px solid rgb(163, 192, 255);
+}
+.form-edit select{
+    outline: none;
+    border: 2px solid #d3d3d3;
+    padding: .4rem .8rem;
+    border-radius: 6px;
+}
+.form-edit select:focus{
+    border: 2px solid rgb(163, 192, 255);
+}
+.edit-btn{
+    border: none;
+    outline: none;
+    color: #fff;
+    /*background: #7b95d8;*/
+    padding: .6rem 1rem;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: .9rem;
+}
+
+.edit-btn:hover{
+    background: #4272f5;
+}

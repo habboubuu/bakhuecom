@@ -1,0 +1,170 @@
+.hero-contact{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.9)),url(./../../Assets/form-img.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 220px;
+    width: 100%;
+}
+.hero-contact-items{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+.hero-contact-items h1{
+    color: #fff;
+    font-size: 3rem;
+    font-weight: 500;
+}
+
+
+/*================
+    CONTACT US 
+==================*/
+.contact{
+    width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-top: 4rem;
+    padding: 0 2rem;
+}
+.form-contact{
+    width: 800px;
+    height: 480px;
+}
+.form-contact h1{
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+}
+.form-contactus input, .form-contactus textarea{
+    outline: none;
+    border: 1px solid #EAEBEE;
+    padding: .8rem;
+    font-size: 1rem;
+    border-radius: 4px;
+}
+.input-namephone{
+    display: flex;
+    gap: .8rem;
+    margin-bottom: 1.2rem;
+}
+.input-namephone input{
+    width: 50%;
+}
+
+.input-emailcontactux{
+    margin-bottom: 1.2rem;
+}
+.input-emailcontactux input{
+    width: 100%;
+}
+.input-textareacontactus{
+    margin-bottom: 1.2rem;
+}
+.input-textareacontactus textarea{
+    width: 100%;
+    height: 170px;
+}
+.form-contactus button{
+    all: unset;
+    border: 1px solid #fff;
+    background-color: #181818;
+    color: #fff;
+    padding: .8rem 1.5rem;
+    font-size: 1rem;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .25s ease-in;
+}
+.form-contactus button:hover{
+    background-color: #fff;
+    color: #181818;
+    border: 1px solid #181818;
+}
+
+/*==============
+    SUPPORT
+===============*/
+.support-contact{
+    border: 1px solid #EAEBEE;
+    padding: 1.5rem;
+    border-radius: 6px;
+}
+.support-contact h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    margin-bottom: 1.5rem;
+}
+.icon-titlesuport{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.icon-titlesuport h4{
+    font-size: 1.1rem;
+    font-weight: 500;
+}
+.icon-titlesuport i{
+    font-size: 1.2rem;
+}
+.info-contact{
+    padding: 1rem 2rem;
+}
+.info-contact p{
+    color: #747478;
+}
+.info-contact a{
+    text-decoration: none;
+    color: var(--black);
+    font-weight: 500;
+}
+
+.phover a{
+    color: #747478;
+    transition: .2s;
+}
+.phover a:hover{
+    color: var(--black);
+}
+
+/*======================
+    RESPONSIVE DESIGN
+=======================*/
+@media screen and (max-width: 1115px){
+    .contact{
+        justify-content: flex-start;
+        gap: 1rem;
+    }
+    .support-contact{
+        margin-bottom: 2rem;
+    }
+}
+@media screen and (max-width:376px){
+    .support-contact{
+        padding: .6rem;
+        margin-bottom: 2rem;
+    }
+    .info-contact{
+        padding: .5rem .6rem;
+    }
+}
+
+@media screen and (max-width:303px){
+    .support-contact{
+        padding: .4rem;
+        border: none;
+        border-top: 1px solid #222;
+        border-radius: 0;
+    }
+    .support-contact h3{
+        margin-bottom: .5rem;
+    }
+    .info-contact{
+        padding: .5rem .6rem;
+    }
+    
+}
