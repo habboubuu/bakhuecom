@@ -29,7 +29,7 @@ const LatestSaleProduct = () => {
 
     //console.log(products);
 
-    const ProductShow = products.map((product, key) => {
+    const ProductShow = Array.isArray(products) ? products.map((product, key) => {
     
         const discountPercent = product.discount || 0;
         const currentPrice = product.price || 0;
@@ -50,7 +50,7 @@ const LatestSaleProduct = () => {
      </Link>
      
      );
-    });
+    }) : null;
 
 
 
