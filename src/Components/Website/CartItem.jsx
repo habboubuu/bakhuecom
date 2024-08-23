@@ -20,24 +20,22 @@ const CartItem = ({ id, quantity }) => {
                         Authorization: "Bearer " + cookie.get("e-commerce"),
                     }
                 });
-                setProduct(response.data[0]);
-                setLoading(false);
+                // Ensure response data is properly set
+                setProduct(response.data[0] || {}); 
             } catch (error) {
                 console.error('Failed to fetch product:', error);
+            } finally {
                 setLoading(false);
             }
         };
 
-        // Check if product data is already available
-        if (!product) {
-            fetchProduct();
-        } else {
-            setLoading(false);
-        }
-    }, [id, cookie, product]);
+        fetchProduct();
+    }, [id, cookie]);
 
     if (loading) return <div>Loading...</div>;
-    if (!product || !product.images[0]?.image) {
+
+    // Check if product or its images are properly defined
+    if (!product || !Array.isArray(product.images) || product.images.length === 0) {
         return <div>Product not found</div>;
     }
 
