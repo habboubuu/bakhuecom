@@ -1,4 +1,5 @@
-export const baseURL = `http://127.0.0.1:8000/api`;
+export const baseURL = `bakhu-6d69c5c4bd91.herokuapp.com/api`;
+//`http://127.0.0.1:8000/api`;
 
 // AUTH
 export const REGISTER = "register"
